@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/manutowersdev/Games/static/css/main.1d3b2283.chunk.css",
+    "main.js": "/manutowersdev/Games/static/js/main.a88d21db.chunk.js",
+    "main.js.map": "/manutowersdev/Games/static/js/main.a88d21db.chunk.js.map",
+    "runtime-main.js": "/manutowersdev/Games/static/js/runtime-main.857c36ed.js",
+    "runtime-main.js.map": "/manutowersdev/Games/static/js/runtime-main.857c36ed.js.map",
+    "static/js/2.d64b074c.chunk.js": "/manutowersdev/Games/static/js/2.d64b074c.chunk.js",
+    "static/js/2.d64b074c.chunk.js.map": "/manutowersdev/Games/static/js/2.d64b074c.chunk.js.map",
+    "index.html": "/manutowersdev/Games/index.html",
+    "static/css/main.1d3b2283.chunk.css.map": "/manutowersdev/Games/static/css/main.1d3b2283.chunk.css.map",
+    "static/js/2.d64b074c.chunk.js.LICENSE.txt": "/manutowersdev/Games/static/js/2.d64b074c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.857c36ed.js",
+    "static/js/2.d64b074c.chunk.js",
+    "static/css/main.1d3b2283.chunk.css",
+    "static/js/main.a88d21db.chunk.js"
+  ]
+}
