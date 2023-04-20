@@ -16,7 +16,6 @@ export default function Squares({ sPos, fillSquare, board, active, game }) {
   };
   let divs = [];
   const handleClick = (e) => {
-    console.log(game);
     e.target.style.pointerEvents = 'none';
     fillSquare(e.target.attributes[1].value);
     setReload(!reLoad);

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Rows from './Rows';
+import confetti from 'canvas-confetti';
 // import Squares from './Squares';
 
 export default function Board() {
@@ -26,9 +27,8 @@ export default function Board() {
   let round = 0;
 
   function fillSquare(sqId) {
-    const player = round % 2 === 0 ? 'X' : 'O';
+    const player = round % 2 === 0 ? '❌' : '⭕';
     board[sqId] = player;
-    console.log(`Ronda: ${round}, jugador ${player}, ha colocado en ${sqId}`);
     round++;
     setBoard(board);
     const solutions = [
@@ -76,12 +76,17 @@ export default function Board() {
 
   useEffect(() => {
     if (game.finished) {
-      console.log(game);
+      confetti.Promise = Promise;
+      confetti({
+        particleCount: 200,
+        spread: 70,
+        origin: { y: 0.6 },
+      });
       const newJSX = (
         <>
           <h1>Tic-Tac-Toe</h1>
           <div className='endGame'>
-            <h1>Ha ganado {game.winner}</h1>
+            <h1>Winner ➡️ {game.winner}</h1>
           </div>
           <Rows fillSquare={fillSquare} board={board} game={game} />
         </>
